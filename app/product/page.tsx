@@ -1,7 +1,6 @@
 async function userList() {
   let data: any = await fetch("https://dummyjson.com/users");
   data = await data.json();
-  console.log("check users", data);
 
   return data.users;
 }
